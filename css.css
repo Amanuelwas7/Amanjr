@@ -1,0 +1,106 @@
+body{
+    background-image: linear-gradient(rgb(0,0,0,0.5), rgba(0,0,0,0.5)), url(walp.jpg);
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: azure;
+    }
+    .main-nav{
+        float: right;
+        list-style: none; 
+        margin-top: 30px;
+    }
+    .main-nav li{
+        display: inline-block;
+    }
+    .main-nav li a{
+    color: white;
+    text-decoration: none;
+    padding: 5px 20px;
+    font-family: "Roboto"; sans-serif;
+    font-size: 15px;
+    }
+    .main-nav li.active a{
+        border:1px solid white
+    }
+    .main-nav li a:hover{
+        border: 1px solid white;
+    }
+    
+.row{
+    width: 80%;
+    min-height: 85vh;
+    margin-left: 100px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.col{
+    margin: 20px 0;
+    flex-basis: 50%;
+    min-width: 100px;
+    height: 100%;
+    position: relative;
+}
+.text-box{
+    max-width: 400px;
+    margin-top: 100px;
+}
+.text-box h1{
+    color: #e7c82f;
+}
+.text-box h3{
+    letter-spacing: 1.6px;
+}
+.gallery-box{
+    max-width: 400px;
+    position: relative;
+    margin: auto;
+}
+.gallery-box img{
+    width: 100%;
+    border: 10px solid rgba(255, 255, 255, 0.2);
+    box-sizing: border-box;
+}
+.gallery-box ul{
+    position: absolute;
+    right: -100px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.gallery-box ul li{
+    list-style: none;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 30px;
+    margin-bottom: 30px;
+    cursor: pointer;
+    position: relative;
+}
+.gallery-box .active{
+color: #e7c82f;
+    }
+.gallery-box ul li ::after{
+    content: '';
+    width: 30px;
+    height: 2px;
+    background: transparent;
+    position: absolute
+    top: 8px;
+    left: -5px;
+}
+.gallery-box .active::after{
+    background: #e7c82f;
+}
+footer{
+    background-color: white;
+}
+p{
+    font-size: x-large;
+    letter-spacing: 3px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+h2{
+    color:  #5e5e61;
+    padding: 1%;
+}

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Website</title>
+    <link rel="stylesheet" type="text/css" href="css.css"
+</head>
+<body>
+    
+    <ul class="main-nav">
+          <li class="active"><a href="index.html">HOME</a></li>
+          <li><a href="2.html">HOBBY</a></li>
+          <li><a href="3.html">ROLE MODELS</a></li>
+          <li><a href="4.html">FUTURE PLANS</a></li>
+    </ul>
+    <br> <br> <br> <br> <br> <br> 
+<div class="row">
+    <div class="col">
+        <div class="text-box">
+            <h1>People who I mostly look up to</h1>
+            <h3>Both of them are the definitions of hard work and determination. Cristiano ronaldo and Marthin luther king jr. Everytime i see them it reminds me that hardwork pays off. And that struggle and failure does not define who you are rather make you stronger. Looking at where they started and where they are right now it motivates me everyday to work harder. </h3>
+        </div>
+
+    </div>
+    <div class="col">
+        <div class="gallery-box">
+            <img src="c/cr7.jpg" id="gallery" height="430">
+            
+            <ul>
+                <li class="btn">01</li>
+                <li class="btn active">02</li>
+                <li class="btn">03</li>
+                <li class="btn">04</li>
+            </ul>
+        </div>
+
+    </div>
+</div>
+<script>
+    var btn = document.getElementsByClassName("btn");
+    var gallery = document.getElementById("gallery");
+    var c = new Array(
+        "c/cr7.jpg",
+        "c/cr17.jpg", 
+        "c/jr.jpg",
+        "c/kjr.jpg"
+    );
+    for(let i=0; i<btn.length; i++){
+        btn[i].onclick = function(){
+            gallery.src = c[i];
+            
+        };
+    }
+
+</script>
+   
+</body>
+</html>

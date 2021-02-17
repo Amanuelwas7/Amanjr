@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Website</title>
+    <link rel="stylesheet" type="text/css" href="css.css" 
+ </head>
+
+<body>
+
+    <ul class="main-nav">
+        <li class="active"><a href="index.html">HOME</a></li>
+        <li><a href="2.html">HOBBY</a></li>
+        <li><a href="3.html">ROLE MODELS</a></li>
+        <li><a href="4.html">FUTURE PLANS</a></li>
+    </ul>
+    <div class="row">
+        <div class="col">
+            <div class="text-box">
+                <h1>Free hand sketching</h1>
+                <h3><b><I>This are some of my drawings!!</I></b><br>Everytime I finish studying or doing assignments i just take the
+                    pencile and start drawing on anything i get infront of me. IT just makes me feel relaxed and just
+                    enjoy the moment. I love pablo picasso znd Da vinci from artists. </h3>
+            </div>
+
+        </div>
+        <div class="col">
+            <div class="gallery-box">
+                <img src="b/9.jpg" id="gallery">
+
+                <ul>
+                    <li class="btn">01</li>
+                    <li class="btn active">02</li>
+                    <li class="btn">03</li>
+                    <li class="btn">04</li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+    
+    <script>
+        var btn = document.getElementsByClassName("btn");
+        var gallery = document.getElementById("gallery");
+        var b = new Array(
+            "b/3.jpg",
+            "b/5.jpg",
+            "b/7.jpg",
+            "b/9.jpg"
+        );
+        for (let i = 0; i < btn.length; i++) {
+            btn[i].onclick = function () {
+                gallery.src = b[i];
+
+            };
+        }
+
+    </script>
+
+</body>
+
+</html>
