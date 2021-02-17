@@ -1,0 +1,3 @@
+# Amanjr
+The main target of this website is to give information about my personal life and skill to anyone who visited.  And  give them a better understanding  about  myself. I mainly focused on my soft skills than hard skills. There is a saying of American people that says show me your friend and i will tell you who you are. So peoples visiting this website will understand who I really am by seeing who I look up to and what I do. 
+This website can also be useful for job application. In the recent years most companies are focusing on the real you(hobbies, families and of course plans) rather than the papers you have academically to put faith in you.
